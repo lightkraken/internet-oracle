@@ -1,22 +1,28 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-
-  <!-- <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint"> -->
-
+  <title>The Internet Oracle</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/lodash/lodash.min.js"></script>
 </head>
 
 <body>
-  <img class="card-image" src="https://source.unsplash.com/random/?1">
-  <img class="card-image" src="https://source.unsplash.com/random/?2">
-  <img class="card-image" src="https://source.unsplash.com/random/?3">
+  <div class="card">
+    <img class="card-image" src="https://source.unsplash.com/random/600x800">
+    <div id="card-1"></div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://source.unsplash.com/random/800x600">
+    <div id="card-2"></div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://source.unsplash.com/random/400x600">
+    <div id="card-3"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 

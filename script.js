@@ -1,4 +1,4 @@
-fetch('tarotkey.json')
+fetch('fortunes.json')
     .then(response => response.json())
     .then(cards => {
         const shuffledCards = _.shuffle(cards);

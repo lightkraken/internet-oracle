@@ -1,0 +1,23 @@
+{
+  "name": "internet-oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightkraken/internet-oracle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightkraken/internet-oracle/issues"
+  },
+  "homepage": "https://github.com/lightkraken/internet-oracle#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11"
+  }
+}

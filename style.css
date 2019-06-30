@@ -42,7 +42,6 @@ body {
 
 .monitor-img {
     position: absolute;
-    z-index: 1;
     display: block;
     width: 500px;
     height: 466px;

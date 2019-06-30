@@ -1,3 +1,0 @@
-Center gradient: 290a59 purple
-edge gradient: ff7c00 orange
-desk color: 280653 purple

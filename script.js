@@ -8,21 +8,26 @@ fetch('//api.giphy.com/v1/gifs/random?api_key=XwvbKQocv3dWq9FfL3cP4fKbw0gVzo81')
 
 // get random fortune from JSON file
 // set fortune text on element
+let fortuneText;
 fetch('fortunes.json')
     .then(response => response.json())
     .then(fortunes => {
         const shuffled = _.shuffle(fortunes);
         const fortune = shuffled.pop();
-        $('#fortune-text').text(fortune.text);
+        fortuneText = fortune.text;
     })
 
 // get random music file
 // set it as src on source element 
-$('#audio').attr('src', 'music/' + _.random(1,75) + '.mp3')
+$('#audio').attr('src', 'music/' + _.random(1,76) + '.mp3')
 
 $('#submit-button').click(() => {
     $('#audio')[0].play();
     $('#console').remove();
     $('#pythia').remove();
     $('#fortune-text').show();
+    new Typed('#fortune-text', {
+        strings: [fortuneText],
+        typeSpeed: 40
+    });
 });

@@ -32,7 +32,7 @@ body {
     position: relative;
     height: 500px;
     width: 466px;
-    margin: -275px 20px 0 20px;
+    margin: -275px 28px 0;
 }
 
 .monitor-img {
@@ -56,7 +56,6 @@ body {
 }
 
 .oracle-gif--fortune {
-    display: none;
 }
 
 .console {
@@ -69,7 +68,7 @@ body {
     left: 33px;
     transform: skew(0deg, 2deg);
     z-index: 2;
-    color: green;
+    color: #00C200;
     font-family: monospace;
     font-size: 24px;
     padding-top: 4px;
@@ -81,6 +80,55 @@ body {
     flex-direction: column;
 }
 
-.console-input {
-    margin-left: 24px;
+.console-input-box {
+    margin-left: 52px;
+    width: 272px;
+    background: none;
+    border: 0;
+    color: #00C200;
+    font-family: monospace;
+    font-size: 24px;
+    overflow: hidden;
+    resize: none;
+    transform: rotate(1deg);
+}
+
+.console-input-box:focus {
+    outline: 0;
+}
+
+.submit-button {
+    background-color: transparent;
+    border: 2px solid;
+    font-family: monospace;
+    font-size: 24px;
+    color: #00C200;
+    transform: rotate(2deg);
+    margin-left: 131px;
+    margin-top: 11px;
+    width: 100px;
+    transition: color 0.2s;
+}
+
+.submit-button:focus {
+    outline: 0;
+}
+
+.submit-button:hover {
+    color: #89ff89;
+    cursor: pointer;
+}
+
+.fortune-text {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    font-family: monospace;
+    font-size: 20px;
+    color: #00C200;
+    width: 327px;
+    height: 260px;
+    top: 64px;
+    left: 58px;
+    transform: skew(0deg, 3deg);
 }

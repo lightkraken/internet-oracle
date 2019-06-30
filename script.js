@@ -13,9 +13,16 @@ fetch('fortunes.json')
     .then(fortunes => {
         const shuffled = _.shuffle(fortunes);
         const fortune = shuffled.pop();
-        $('#card-1').text(fortune.text);
+        $('#fortune-text').text(fortune.text);
     })
 
 // get random music file
 // set it as src on source element 
 $('#audio').attr('src', 'music/' + _.random(1,75) + '.mp3')
+
+$('#submit-button').click(() => {
+    $('#audio')[0].play();
+    $('#console').remove();
+    $('#pythia').remove();
+    $('#fortune-text').show();
+});

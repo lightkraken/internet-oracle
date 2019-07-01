@@ -46,29 +46,50 @@ body {
     background-color: #280653;
 }
 
+.monitors {
+    display: flex;
+}
+
 .monitor {
     position: relative;
-    width: 400px;
-    height: 373px;
-    margin: -216px 28px 0;
+    height: 500px;
+    width: 466px;
+    margin: -275px 35px 0;
+}
+
+    .monitor--left {
+        margin-right: 40px;
+    }
+
+    .monitor--right {
+        margin-left: 40px;
+    }
+
+@media screen and (max-width: 1350px) {
+    .monitors {
+        transform: scale(0.85);
+    }
+    .monitor {
+        margin-top: -290px;
+    }
 }
 
 .monitor-img {
     position: absolute;
     display: block;
-    width: 400px;
-    height: 373px;
+    width: 500px;
+    height: 466px;
 }
 
 .oracle-gif {
     position: absolute;
     display: block;
-    width: 307px;
-    height: 246px;
+    width: 381px;
+    height: 302px;
     object-fit: cover;
     object-position: 50% 50%;
-    top: 33px;
-    left: 70px;
+    top: 42px;
+    left: 89px;
     transform: skew(0deg, -4deg);
 }
 
@@ -77,39 +98,37 @@ body {
 
 .console {
     position: absolute;
-    width: 307px;
-    height: 246px;
+    width: 381px;
+    height: 302px;
     object-fit: cover;
     object-position: 50% 50%;
-    top: 33px;
-    left: 22px;
+    top: 55px;
+    left: 33px;
     transform: skew(0deg, 2deg);
     z-index: 2;
     color: #00C200;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 24px;
+    padding-top: 4px;
 }
 
 .console-message {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 15px;
 }
 
 .console-input-box {
     margin-left: 52px;
-    width: 210px;
+    width: 272px;
     background: none;
     border: 0;
     color: #00C200;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 24px;
     overflow: hidden;
     resize: none;
-    transform: rotate(0.5deg);
-    position: absolute;
-    top: 63px;
+    transform: rotate(1deg);
 }
 
 .console-input-box:focus {
@@ -120,14 +139,13 @@ body {
     background-color: transparent;
     border: 2px solid;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 24px;
     color: #00C200;
     transform: rotate(2deg);
     width: 100px;
     transition: color 0.2s;
-    position: absolute;
-    bottom: 24px;
-    left: 100px;
+    margin-left: 131px;
+    margin-top: 11px;
 }
 
 .submit-button:focus {
@@ -144,11 +162,11 @@ body {
     position: absolute;
     z-index: 2;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 20px;
     color: #00C200;
-    width: 251px;
-    height: 201px;
-    top: 57px;
-    left: 54px;
+    width: 327px;
+    height: 260px;
+    top: 64px;
+    left: 58px;
     transform: skew(0deg, 3deg);
 }
